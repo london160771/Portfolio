@@ -18,6 +18,14 @@ const PROJECTS = [
     link: "https://alpha-watch.vercel.app",
   },
   {
+    id: "sw",
+    name: "Sonar",
+    type: "Full-Stack",
+    desc: "Sonar - a whale alert bot that watches a handful of known exchange and whale wallets on Ethereum. When a wallet moves more than the set USD threshold in a single transaction, it counts as a catch — logged here and posted live to Discord.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "JavaScript"],
+    link: "https://sonar-whale.vercel.app",
+  },
+  {
     id: "gp",
     name: "Gift Pay",
     type: "Frontend",
@@ -126,7 +134,7 @@ export default function Portfolio() {
           Open to work
         </div>
         <h1 className="hero-h1" style={s.heroH1}>
-          Hi, I'm <span style={{ color: "#6366F1" }}>Sauban</span>.<br />
+          Hi, I'm <span style={{ color: "#6366F1" }}>Ayyoweb3</span>.<br />
           I build for the web.
         </h1>
         <p style={s.heroSub}>
@@ -151,7 +159,7 @@ export default function Portfolio() {
         <div style={s.eyebrow}>About</div>
         <div style={s.secTitle}>A bit about me</div>
         <div style={s.aboutGrid} className="about-grid">
-          <img src={profilePhoto} alt="Sauban" style={s.photoImg} />
+          <img src={profilePhoto} alt="Ayyoweb3" style={s.photoImg} />
           <div>
             <p style={s.aboutText}>
               I'm a full-stack developer based in Lagos, Nigeria. I started in web3 as a user and tester — but after two years, I wanted to do more than just use other people's products. So I learned to build.
