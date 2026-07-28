@@ -26,6 +26,14 @@ const PROJECTS = [
     link: "https://sonar-whale.vercel.app",
   },
   {
+    id: "ya",
+    name: "Yield Aggregator",
+    type: "Full-Stack",
+    desc: "A platform for aggregating and optimizing yield from various DeFi protocols — built with React and Node.js.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "JavaScript"],
+    link: "https://yield-aggregator-wine.vercel.app",
+  },
+  {
     id: "gp",
     name: "Gift Pay",
     type: "Frontend",
