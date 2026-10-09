@@ -1,3 +1,6 @@
-import Portfolio from "./pages/Portfolio";
-import "./App.css";
-export default function App() { return <Portfolio />; }
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './app/AppRoutes';
+
+export default function App() {
+  return <BrowserRouter><AppRoutes /></BrowserRouter>;
+}

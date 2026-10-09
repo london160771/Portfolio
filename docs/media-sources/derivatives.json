@@ -1,0 +1,314 @@
+{
+  "opna": {
+    "desktop": {
+      "source": "opna-desktop.jpg",
+      "crop": [
+        144,
+        0,
+        1280,
+        585
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/opna/lead-desktop-480.webp",
+          "width": 480,
+          "height": 247,
+          "bytes": 10094
+        },
+        {
+          "src": "/assets/projects/opna/lead-desktop-800.webp",
+          "width": 800,
+          "height": 412,
+          "bytes": 21480
+        },
+        {
+          "src": "/assets/projects/opna/lead-desktop-1136.webp",
+          "width": 1136,
+          "height": 585,
+          "bytes": 37088
+        }
+      ]
+    },
+    "mobile": {
+      "source": "opna-mobile.jpg",
+      "crop": [
+        0,
+        0,
+        374,
+        585
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/opna/lead-mobile-374.webp",
+          "width": 374,
+          "height": 585,
+          "bytes": 20832
+        }
+      ]
+    }
+  },
+  "velora-cove": {
+    "desktop": {
+      "source": "velora-desktop.jpg",
+      "crop": [
+        0,
+        100,
+        1424,
+        790
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/velora-cove/lead-desktop-480.webp",
+          "width": 480,
+          "height": 233,
+          "bytes": 13868
+        },
+        {
+          "src": "/assets/projects/velora-cove/lead-desktop-800.webp",
+          "width": 800,
+          "height": 388,
+          "bytes": 27518
+        },
+        {
+          "src": "/assets/projects/velora-cove/lead-desktop-1200.webp",
+          "width": 1200,
+          "height": 581,
+          "bytes": 45460
+        },
+        {
+          "src": "/assets/projects/velora-cove/lead-desktop-1424.webp",
+          "width": 1424,
+          "height": 690,
+          "bytes": 58782
+        }
+      ]
+    },
+    "mobile": {
+      "source": "velora-mobile.jpg",
+      "crop": [
+        0,
+        170,
+        374,
+        680
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/velora-cove/lead-mobile-374.webp",
+          "width": 374,
+          "height": 510,
+          "bytes": 24030
+        }
+      ]
+    }
+  },
+  "the-bv-brand": {
+    "desktop": {
+      "source": "bv-desktop.jpg",
+      "crop": [
+        0,
+        0,
+        1424,
+        940
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/the-bv-brand/lead-desktop-480.webp",
+          "width": 480,
+          "height": 317,
+          "bytes": 20438
+        },
+        {
+          "src": "/assets/projects/the-bv-brand/lead-desktop-800.webp",
+          "width": 800,
+          "height": 528,
+          "bytes": 42102
+        },
+        {
+          "src": "/assets/projects/the-bv-brand/lead-desktop-1200.webp",
+          "width": 1200,
+          "height": 792,
+          "bytes": 74390
+        },
+        {
+          "src": "/assets/projects/the-bv-brand/lead-desktop-1424.webp",
+          "width": 1424,
+          "height": 940,
+          "bytes": 95864
+        }
+      ]
+    },
+    "mobile": {
+      "source": "bv-mobile.jpg",
+      "crop": [
+        0,
+        0,
+        374,
+        748
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/the-bv-brand/lead-mobile-374.webp",
+          "width": 374,
+          "height": 748,
+          "bytes": 42630
+        }
+      ]
+    }
+  },
+  "stocksplit": {
+    "desktop": {
+      "source": "stocksplit-desktop.jpg",
+      "crop": [
+        0,
+        0,
+        1440,
+        610
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/stocksplit/lead-desktop-480.webp",
+          "width": 480,
+          "height": 203,
+          "bytes": 10906
+        },
+        {
+          "src": "/assets/projects/stocksplit/lead-desktop-800.webp",
+          "width": 800,
+          "height": 339,
+          "bytes": 22882
+        },
+        {
+          "src": "/assets/projects/stocksplit/lead-desktop-1200.webp",
+          "width": 1200,
+          "height": 508,
+          "bytes": 39804
+        },
+        {
+          "src": "/assets/projects/stocksplit/lead-desktop-1440.webp",
+          "width": 1440,
+          "height": 610,
+          "bytes": 52346
+        }
+      ]
+    },
+    "mobile": {
+      "source": "stocksplit-mobile.jpg",
+      "crop": [
+        0,
+        0,
+        400,
+        725
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/stocksplit/lead-mobile-400.webp",
+          "width": 400,
+          "height": 725,
+          "bytes": 33998
+        }
+      ]
+    }
+  },
+  "agenthub": {
+    "desktop": {
+      "source": "agenthub-desktop.jpg",
+      "crop": [
+        0,
+        0,
+        1420,
+        724
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/agenthub/lead-desktop-480.webp",
+          "width": 480,
+          "height": 245,
+          "bytes": 13642
+        },
+        {
+          "src": "/assets/projects/agenthub/lead-desktop-800.webp",
+          "width": 800,
+          "height": 408,
+          "bytes": 27788
+        },
+        {
+          "src": "/assets/projects/agenthub/lead-desktop-1200.webp",
+          "width": 1200,
+          "height": 612,
+          "bytes": 50386
+        },
+        {
+          "src": "/assets/projects/agenthub/lead-desktop-1420.webp",
+          "width": 1420,
+          "height": 724,
+          "bytes": 65268
+        }
+      ]
+    },
+    "mobile": {
+      "source": "agenthub-mobile.jpg",
+      "crop": [
+        0,
+        0,
+        370,
+        702
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/agenthub/lead-mobile-370.webp",
+          "width": 370,
+          "height": 702,
+          "bytes": 32540
+        }
+      ]
+    }
+  },
+  "portpay": {
+    "desktop": {
+      "source": "portpay-desktop.jpg",
+      "crop": [
+        166,
+        0,
+        1240,
+        614
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/portpay/lead-desktop-480.webp",
+          "width": 480,
+          "height": 274,
+          "bytes": 12966
+        },
+        {
+          "src": "/assets/projects/portpay/lead-desktop-800.webp",
+          "width": 800,
+          "height": 457,
+          "bytes": 28638
+        },
+        {
+          "src": "/assets/projects/portpay/lead-desktop-1074.webp",
+          "width": 1074,
+          "height": 614,
+          "bytes": 48336
+        }
+      ]
+    },
+    "mobile": {
+      "source": "portpay-mobile.jpg",
+      "crop": [
+        0,
+        0,
+        360,
+        510
+      ],
+      "files": [
+        {
+          "src": "/assets/projects/portpay/lead-mobile-360.webp",
+          "width": 360,
+          "height": 510,
+          "bytes": 21100
+        }
+      ]
+    }
+  }
+}
