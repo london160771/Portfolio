@@ -20,14 +20,14 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 30; background: color-mix(in srgb, var(--color-canvas) 92%, transparent); border-bottom: 1px solid var(--color-rule); }
 .site-header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; min-height: var(--header-height); }
-.wordmark { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--font-serif); font-size: 1.375rem; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; }
+.wordmark { display: inline-flex; align-items: center; min-height: 44px; font-family: var(--font-serif); font-size: 1.25rem; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; }
 .site-nav { display: flex; gap: 4px 22px; }
 .site-nav a { position: relative; display: inline-flex; align-items: center; min-height: 44px; font-size: var(--type-label); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; }
 .site-nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 10px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 300ms var(--ease-out); }
 .site-nav a[aria-current='page']::after { transform: scaleX(1); }
 
 /* Buttons */
-.button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 22px; border: 1px solid var(--color-ink); font-size: var(--type-meta); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out); }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 20px; border: 1px solid var(--color-ink); font-size: var(--type-label); font-weight: 400; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out); }
 .button span { transition: transform 250ms var(--ease-out); }
 .button--primary { background: var(--color-ink); color: var(--color-on-ink); }
 
@@ -42,7 +42,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
   .button:hover span { transform: translateX(4px); }
 }
 @media (max-width: 26rem) {
-  .wordmark { font-size: 1.125rem; letter-spacing: .1em; }
+  .wordmark { font-size: 1.0625rem; letter-spacing: .1em; }
   .site-nav { gap: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {

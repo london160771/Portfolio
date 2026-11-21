@@ -1,16 +1,22 @@
-# React + Vite
+# ayyoweb3 portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio of ayyoweb3 (Sauban Adesope): full stack web developer and AI motion designer.
 
-Currently, two official plugins are available:
+Live: https://ayyoweb3-portfolio.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
+React 19 + Vite, react-router (nested routes), `motion` for animation, plain CSS with tokens, Instrument Serif + Inter via @fontsource. Static site on Vercel; no backend.
 
-## React Compiler
+## Develop
+```bash
+npm install
+npm run dev      # local dev server
+npm run lint
+npm run build    # production build in dist/
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Where things live
+- `src/data/projects.js`: builds (titles, links, stack, screenshots, award)
+- `src/data/motion.js`: motion pieces; web copies and posters in `public/assets/motion/<slug>/`
+- `src/pages/`: Landing, Motion, Builds, Contact, Not Found
+- `SPEC.md`, `DESIGN.md`, `AGENTS.md`: content, design and build rules

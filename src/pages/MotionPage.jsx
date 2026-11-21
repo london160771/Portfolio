@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import BigTitle from '../components/BigTitle';
 import MotionCard from '../components/MotionCard';
+import ContactCta from '../components/ContactCta';
 import { motionPieces } from '../data/motion';
 import usePageTitle from '../hooks/usePageTitle';
 
@@ -13,6 +14,7 @@ export default function MotionPage() {
       <ul className="motion-grid">
         {motionPieces.map((piece, index) => <MotionCard key={piece.slug} piece={piece} index={index} />)}
       </ul>
+      <ContactCta />
       <Outlet />
     </section>
   );

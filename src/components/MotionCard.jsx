@@ -32,7 +32,6 @@ export default function MotionCard({ piece, index }) {
     return () => observer.disconnect();
   }, []);
 
-  const [w, h] = piece.aspect.split(':');
   return (
     <motion.li
       className="motion-item"
@@ -52,7 +51,7 @@ export default function MotionCard({ piece, index }) {
         onFocus={() => canHover() && play()}
         onBlur={() => canHover() && stop()}
       >
-        <div className="motion-frame" style={{ aspectRatio: `${w} / ${h}` }}>
+        <div className="motion-frame">
           <img src={piece.poster} alt="" loading={index < 3 ? 'eager' : 'lazy'} decoding="async" />
           <video ref={video} src={piece.src} onPlaying={(e) => e.currentTarget.classList.add('is-playing')} muted loop playsInline preload="none" aria-hidden="true" tabIndex={-1} />
           <span className="motion-duration">{formatDuration(piece.duration)}</span>

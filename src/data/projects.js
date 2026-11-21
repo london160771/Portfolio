@@ -102,7 +102,12 @@ export const projects = [
     stack: ['TypeScript', 'React', 'Binance Agent OS'],
     liveUrl: 'https://rokai-agent.vercel.app/',
     repositoryUrl: 'https://github.com/london160771/rokai',
-    media: [], outcomes: [],
+    media: [{
+      type: 'image', src: '/assets/projects/rokai/lead-desktop-1440.webp',
+      srcSet: '/assets/projects/rokai/lead-desktop-480.webp 480w, /assets/projects/rokai/lead-desktop-800.webp 800w, /assets/projects/rokai/lead-desktop-1200.webp 1200w, /assets/projects/rokai/lead-desktop-1440.webp 1440w',
+      width: 1440, height: 900,
+      alt: 'Rokai’s live read-only demo with a plain-English portfolio policy and a proposed trade awaiting approval.',
+    }], outcomes: [],
     award: null,
   },
   {
@@ -112,7 +117,12 @@ export const projects = [
     stack: ['React', 'TypeScript', 'Solidity'],
     liveUrl: 'https://q2fa.vercel.app',
     repositoryUrl: 'https://github.com/london160771/Q2FA',
-    media: [], outcomes: [],
+    media: [{
+      type: 'image', src: '/assets/projects/q2fa/lead-desktop-1440.webp',
+      srcSet: '/assets/projects/q2fa/lead-desktop-480.webp 480w, /assets/projects/q2fa/lead-desktop-800.webp 800w, /assets/projects/q2fa/lead-desktop-1200.webp 1200w, /assets/projects/q2fa/lead-desktop-1440.webp 1440w',
+      width: 1440, height: 900,
+      alt: 'Q2FA’s live docs page on Arc Mainnet explaining how an EVM wallet and a post-quantum guardian both approve protected actions.',
+    }], outcomes: [],
     award: 'Hackathon winner · Arc Microgrant',
   },
   {
@@ -122,7 +132,12 @@ export const projects = [
     stack: ['JavaScript', 'Node.js', 'Nostr Wallet Connect'],
     liveUrl: 'https://nwc-limitprobe.vercel.app/',
     repositoryUrl: 'https://github.com/london160771/NWC-LimitProbe',
-    media: [], outcomes: [],
+    media: [{
+      type: 'image', src: '/assets/projects/nwc-limitprobe/lead-desktop-1440.webp',
+      srcSet: '/assets/projects/nwc-limitprobe/lead-desktop-480.webp 480w, /assets/projects/nwc-limitprobe/lead-desktop-800.webp 800w, /assets/projects/nwc-limitprobe/lead-desktop-1200.webp 1200w, /assets/projects/nwc-limitprobe/lead-desktop-1440.webp 1440w',
+      width: 1440, height: 900,
+      alt: 'LimitProbe’s live homepage asking whether an AI agent can overspend its Bitcoin wallet, with a sandbox test entry.',
+    }], outcomes: [],
     award: null,
   },
   {
@@ -132,7 +147,12 @@ export const projects = [
     stack: ['React', 'Chart.js', 'Axios'],
     liveUrl: 'https://alpha-watch.vercel.app/',
     repositoryUrl: 'https://github.com/london160771/AlphaWatch',
-    media: [], outcomes: [], award: null,
+    media: [{
+      type: 'image', src: '/assets/projects/alphawatch/lead-desktop-1440.webp',
+      srcSet: '/assets/projects/alphawatch/lead-desktop-480.webp 480w, /assets/projects/alphawatch/lead-desktop-800.webp 800w, /assets/projects/alphawatch/lead-desktop-1200.webp 1200w, /assets/projects/alphawatch/lead-desktop-1440.webp 1440w',
+      width: 1440, height: 700,
+      alt: 'AlphaWatch’s live crypto tracker with search, currency switcher and popular coins.',
+    }], outcomes: [], award: null,
   },
 ];
 

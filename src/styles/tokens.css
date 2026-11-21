@@ -11,10 +11,20 @@
   --content-width: 90rem;
   --gutter: clamp(1.25rem, 3.5vw, 3rem);
   --header-height: 64px;
-  --type-landing: clamp(2.75rem, 5.4vw, 5.75rem);
-  --type-big: clamp(4.5rem, 17vw, 14rem);
-  --type-lede: clamp(1.125rem, 1.6vw, 1.375rem);
+  --type-landing: clamp(2.5rem, 4.85vw, 5.2rem);
+  --type-big: clamp(4rem, 15vw, 12.5rem);
+  --type-lede: clamp(1.0625rem, 1.45vw, 1.25rem);
+  --type-card: clamp(1.75rem, 2.9vw, 2.5rem);
+  --type-card-sm: clamp(1.375rem, 2vw, 1.8rem);
   --type-body: 1rem;
   --type-meta: .8125rem;
   --type-label: .75rem;
+  --radius-media: 6px;
+  --radius-pill: 999px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --accent: #c2410c;
 }

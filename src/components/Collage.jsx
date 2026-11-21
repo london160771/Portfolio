@@ -34,7 +34,7 @@ function CollageCard({ card, index, pointerX, pointerY, scrollY, reduce }) {
       <motion.div className="collage-card-inner" style={{ x, y }}>
         {card.pfp
           ? <img src="/assets/profile/pfp-400.webp" width="400" height="400" alt={`${profile.brand}’s X avatar: an illustrated grey wolf in a maroon suit.`} />
-          : <img src={card.media.srcSet.split(', ')[1].split(' ')[0]} width={card.media.width} height={card.media.height} alt="" loading="eager" decoding="async" />}
+          : <img src={card.media.srcSet.split(', ')[1].split(' ')[0]} srcSet={card.media.srcSet} sizes="(max-width: 64rem) 45vw, 22vw" width={card.media.width} height={card.media.height} alt="" decoding="async" />}
       </motion.div>
     </motion.div>
   );
