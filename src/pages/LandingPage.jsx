@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Dial from '../components/Dial';
-import About from '../components/About';
 import { profile } from '../data/profile';
 import usePageTitle from '../hooks/usePageTitle';
 
@@ -15,7 +14,6 @@ const rise = {
 export default function LandingPage() {
   usePageTitle(null, 'ayyoweb3 is a full stack web developer and an AI motion designer based in Lagos, Nigeria.');
   return (
-    <>
     <section className="landing container" aria-labelledby="landing-title">
       <motion.div className="landing-copy" variants={intro} initial="initial" animate="animate">
         <motion.div className="landing-id" variants={rise}>
@@ -41,7 +39,5 @@ export default function LandingPage() {
         </motion.div>
       </motion.div>
     </section>
-    <About />
-    </>
   );
 }
