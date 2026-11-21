@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { formatDuration } from '../data/motion';
+import { formatDuration, typeLabel } from '../data/motion';
 
 const ease = [0.22, 1, 0.36, 1];
 const canHover = () => window.matchMedia('(hover: hover)').matches;
@@ -59,7 +59,7 @@ export default function MotionCard({ piece, index }) {
         </div>
         <div className="motion-meta">
           <h2 className="motion-title">{piece.title}</h2>
-          <span className="metadata">{piece.aspect}</span>
+          <span className="metadata">{piece.type ? typeLabel[piece.type] : piece.aspect}</span>
         </div>
       </Link>
     </motion.li>

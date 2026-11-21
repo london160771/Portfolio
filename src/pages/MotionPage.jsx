@@ -9,7 +9,7 @@ export default function MotionPage() {
   return (
     <section className="page container">
       <BigTitle>Motion</BigTitle>
-      <p className="page-lede">AI-driven motion graphics and video. Previews play muted; open a piece for sound.</p>
+      <p className="page-lede">AI-driven motion graphics and video: personal, practice and contest pieces. Brand pieces are unofficial concepts. Previews play muted; open one for sound.</p>
       <ul className="motion-grid">
         {motionPieces.map((piece, index) => <MotionCard key={piece.slug} piece={piece} index={index} />)}
       </ul>

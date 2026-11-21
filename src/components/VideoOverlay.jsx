@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { motionPieces, formatDuration } from '../data/motion';
+import { motionPieces, formatDuration, typeLabel } from '../data/motion';
 
 const ease = [0.22, 1, 0.36, 1];
 
@@ -66,7 +66,7 @@ export default function VideoOverlay() {
       >
         <div className="video-overlay-bar">
           <h2 id="video-title" className="video-title">{piece.title}</h2>
-          <span className="metadata">{piece.aspect} · {formatDuration(piece.duration)}{piece.year && ` · ${piece.year}`}</span>
+          <span className="metadata">{piece.type && `${typeLabel[piece.type]} · `}{piece.aspect} · {formatDuration(piece.duration)}{piece.year && ` · ${piece.year}`}</span>
           <button ref={close} type="button" className="video-close" onClick={dismiss}>Close <span aria-hidden="true">✕</span></button>
         </div>
         <video

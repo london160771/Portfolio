@@ -78,4 +78,4 @@
   .video-close:hover { background: #f4f4f5; color: #0b0b0c; }
 }
 @media (max-width: 64rem) { .motion-grid { columns: 2; } }
-@media (max-width: 30rem) { .motion-meta .metadata { display: none; } .motion-title { font-size: 1.25rem; } }
+@media (max-width: 30rem) { .motion-title { font-size: 1.25rem; } }
