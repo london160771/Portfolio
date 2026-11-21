@@ -3,7 +3,7 @@
 Status: Phase 1 (direction + docs) of the redesign. Supersedes the earlier dev-only spec; history lives in docs/.
 
 ## Positioning
-ayyoweb3 (Sauban Adesope, Lagos) is a **Full Stack Web Developer & AI Motion Designer**: builds web products end to end, then makes them move with AI-assisted motion and video.
+ayyoweb3 (Sauban Adesope, Lagos) is a **Full Stack Web Developer & AI Motion Designer**: two independent skills: building web products end to end, and creating AI-driven motion graphics and video.
 
 ## Purpose and journey
 Visitors land, understand both roles in seconds, then pick a path: **Motion** (watch videos) or **Builds** (open real products/source). Every page ends with a route to Contact.
@@ -24,10 +24,11 @@ Navigation: Motion, Builds, Contact, with the wordmark linking home.
 
 ## Landing copy (locked draft)
 - Eyebrow: `ayyoweb3 — Lagos, Nigeria`
-- Headline: **I build the product.** *Then I make it move.* (italic serif accent on the second sentence)
-- Intro: “Full stack web developer and AI motion designer. I ship web apps from first commit to launch, then turn them into motion and video that make people stop scrolling.”
+- Headline: **Full stack web developer.** *AI motion designer.* (italic serif accent on the second role)
+- Intro: “I build web apps end to end, from first commit to launch. I also create AI-driven motion graphics and videos made to stop the scroll.”
 - Proof line: `1× hackathon winner — Q2FA, Arc Microgrant`
-- Buttons: **Watch it move** → `/motion` and **See what I've built** → `/builds`
+- Buttons: **Watch my motion work** → `/motion` and **See my builds** → `/builds`
+- The two roles are presented as independent skills, not as one linked workflow.
 - Photo: X profile picture of @ayyoweb3 (temporary; replaceable by an uploaded portrait).
 
 ## Builds
