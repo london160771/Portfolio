@@ -4,13 +4,13 @@
 .landing-line { display: block; }
 .landing-title em { font-style: italic; }
 .landing-intro { max-width: 34ch; font-size: var(--type-lede); line-height: 1.5; }
-.proof { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; padding: 8px 14px; border: 1px solid var(--color-rule); border-radius: 18px; background: var(--color-surface); font-size: var(--type-meta); }
-.proof a { display: inline-flex; align-items: center; min-height: 28px; font-weight: 500; }
-.proof-mark { color: #c2410c; }
+.proof { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; padding: 8px 14px; border: 1px solid var(--color-rule); border-radius: var(--radius-pill); background: var(--color-surface); font-size: var(--type-meta); }
+.proof a { display: inline-flex; align-items: center; min-height: 28px; }
+.proof-mark { color: var(--accent); }
 .landing-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 8px; }
 
 /* Dial */
-.dial { position: relative; width: 112px; height: 112px; margin-left: 12px; flex: none; }
+.dial { position: relative; width: 100px; height: 100px; margin-left: 12px; flex: none; }
 .dial-turn, .dial svg { width: 100%; height: 100%; }
 .dial-ring { fill: none; stroke: var(--color-ink); stroke-width: 1; stroke-dasharray: 2 5; }
 .dial-text { font-family: var(--font-sans); font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; fill: var(--color-muted); }
@@ -23,9 +23,9 @@
 /* Collage */
 .collage { position: relative; width: 100%; aspect-ratio: 1 / 1.02; max-height: 78svh; }
 .collage-card { position: absolute; }
-.collage-card-inner { overflow: hidden; border-radius: 6px; background: var(--color-surface); box-shadow: 0 1px 2px rgb(0 0 0 / .06), 0 18px 40px -18px rgb(0 0 0 / .35); }
+.collage-card-inner { overflow: hidden; border-radius: var(--radius-media); background: var(--color-surface); box-shadow: 0 1px 2px rgb(0 0 0 / .06), 0 18px 40px -18px rgb(0 0 0 / .35); }
 .collage-card-inner img { width: 100%; }
-.collage-card--pfp .collage-card-inner { border-radius: 10px; }
+
 .collage-card--pfp img { aspect-ratio: 1; }
 
 @media (max-width: 64rem) {
@@ -38,4 +38,20 @@
   .dial { display: none; }
   .landing-actions { width: 100%; }
   .landing-actions .button { flex: 1 1 100%; }
+}
+
+/* About */
+.about { padding-block: clamp(56px, 8vw, 112px); }
+.about-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--space-4) clamp(24px, 4vw, 64px); padding-top: var(--space-3); border-top: 1px solid var(--color-ink); }
+.about-text { grid-column: 2; max-width: 34ch; font-family: var(--font-serif); font-size: clamp(1.6rem, 2.9vw, 2.5rem); line-height: 1.2; letter-spacing: -.01em; }
+.about-groups { grid-column: 2; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+.about-group-title { margin-bottom: var(--space-1); font-size: var(--type-label); letter-spacing: .1em; text-transform: uppercase; color: var(--color-muted); }
+.about-group ul { margin: 0; padding: 0; list-style: none; }
+.about-group li { padding-block: 10px; border-bottom: 1px solid var(--color-rule); }
+@media (max-width: 48rem) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-text, .about-groups { grid-column: auto; }
+}
+@media (max-width: 30rem) {
+  .about-groups { grid-template-columns: 1fr; }
 }

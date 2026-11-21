@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import BigTitle from '../components/BigTitle';
+import ContactCta from '../components/ContactCta';
 import usePageTitle from '../hooks/usePageTitle';
 
 const tabs = [['/builds', 'All'], ['/builds/web2', 'Web2'], ['/builds/web3', 'Web3']];
@@ -14,6 +15,7 @@ export default function BuildsPage() {
         {tabs.map(([to, label]) => <NavLink key={to} to={to} end>{label}</NavLink>)}
       </nav>
       <Outlet />
+      <ContactCta />
     </section>
   );
 }

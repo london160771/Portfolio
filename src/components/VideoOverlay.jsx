@@ -14,14 +14,17 @@ export default function VideoOverlay() {
   const piece = motionPieces.find((p) => p.slug === slug);
 
   useEffect(() => {
-    if (!piece) return undefined;
     const previous = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
+    // Keep keyboard and screen-reader focus inside the dialog.
+    const root = document.getElementById('root');
+    if (root) root.inert = true;
     close.current?.focus({ preventScroll: true });
     const onKey = (e) => { if (e.key === 'Escape') dismiss(); };
     window.addEventListener('keydown', onKey);
     return () => {
       document.body.style.overflow = previous;
+      if (root) root.inert = false;
       window.removeEventListener('keydown', onKey);
       document.getElementById(`motion-${slug}`)?.focus({ preventScroll: true });
     };

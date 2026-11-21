@@ -1,6 +1,6 @@
 # Portfolio specification
 
-Status: Phases 1–4 built (docs, foundation + landing, Builds cards, Motion grid + overlay). Supersedes the earlier dev-only spec; history lives in docs/.
+Status: Phases 1–5 built (docs, foundation + landing, Builds cards, Motion grid + overlay, polish with About section, SEO and contact bands). Supersedes the earlier dev-only spec; history lives in docs/.
 
 ## Positioning
 ayyoweb3 (Sauban Adesope, Lagos) is a **Full Stack Web Developer & AI Motion Designer**: two independent skills: building web products end to end, and creating AI-driven motion graphics and video.
