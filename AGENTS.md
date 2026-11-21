@@ -24,7 +24,7 @@
 ## Phases
 1. **Direction + docs (complete):** landing copy, SPEC/DESIGN/AGENTS rewrite. Stop for review.
 2. **Foundation + landing (complete, in review):** nested routes and redirects, shared layout with page transitions, tokens and fonts, landing page (intro, pfp, proof, path buttons, collage, dial). Remove unused legacy files (P2.jsx, Portfolio.jsx, starter assets).
-3. **Builds:** BuildCard grid, web2/web3 nested tabs, Q2FA award badge, big-type header.
+3. **Builds (complete, in review):** BuildCard grid, web2/web3 nested tabs, Q2FA award badge, big-type header.
 4. **Motion:** import and compress videos from the user's laptop folder, posters, motion.js, grid + overlay route.
 5. **Polish + launch:** contact page, performance and accessibility pass, README rewrite, deploy on approval.
 
