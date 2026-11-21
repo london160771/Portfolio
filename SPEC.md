@@ -16,11 +16,12 @@ Visitors land, understand both roles in seconds, then pick a path: **Motion** (w
 | `/motion/:slug` | Single piece as an overlay above the grid; shareable, Back/Escape closes |
 | `/builds` | Builds header + all projects |
 | `/builds/web2`, `/builds/web3` | Nested filter tabs over the same list |
+| `/about` | Short bio plus Development and Motion lists |
 | `/contact` | Email and confirmed socials; no backend form |
 
 Old routes `/web2` and `/web3` redirect to `/builds/web2` and `/builds/web3`. Unknown routes use an accessible Not Found view. A layout route owns the header, footer and animated page transitions. Vercel SPA fallback stays in vercel.json.
 
-Navigation: Motion, Builds, Contact, with the wordmark linking home.
+Navigation: Motion, Builds, About, Contact, with the wordmark linking home.
 
 ## Landing copy (locked draft)
 - Eyebrow: `ayyoweb3 — Lagos, Nigeria`

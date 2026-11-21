@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 
-const links = [['/motion', 'Motion'], ['/builds', 'Builds'], ['/contact', 'Contact']];
+const links = [['/motion', 'Motion'], ['/builds', 'Builds'], ['/about', 'About'], ['/contact', 'Contact']];
 
 export default function SiteHeader() {
   return (
