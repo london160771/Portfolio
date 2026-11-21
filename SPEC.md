@@ -1,6 +1,6 @@
 # Portfolio specification
 
-Status: Phase 1 (direction + docs) of the redesign. Supersedes the earlier dev-only spec; history lives in docs/.
+Status: Phase 2 (foundation + landing) built; Builds list is interim until Phase 3. Supersedes the earlier dev-only spec; history lives in docs/.
 
 ## Positioning
 ayyoweb3 (Sauban Adesope, Lagos) is a **Full Stack Web Developer & AI Motion Designer**: two independent skills: building web products end to end, and creating AI-driven motion graphics and video.

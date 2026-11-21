@@ -17,7 +17,7 @@ export const projects = [
       width: 1136, height: 585,
       mobile: { src: '/assets/projects/opna/lead-mobile-374.webp', width: 374, height: 585 },
       alt: 'Opna’s blue wordmark and live booking product introduction.',
-    }], hackathon: null, outcomes: [],
+    }], award: null, outcomes: [],
   },
   {
     slug: 'velora-cove', title: 'VELORA COVE', category: ['web2'], featured: true, year: 2026,
@@ -32,7 +32,7 @@ export const projects = [
       width: 1424, height: 690,
       mobile: { src: '/assets/projects/velora-cove/lead-mobile-374.webp', width: 374, height: 510 },
       alt: 'VELORA COVE concept homepage showing its wordmark, coastal pool and editorial headline.',
-    }], hackathon: null, outcomes: [],
+    }], award: null, outcomes: [],
   },
   {
     slug: 'the-bv-brand', title: 'THE BV BRAND', category: ['web2'], featured: true, year: 2026,
@@ -47,7 +47,7 @@ export const projects = [
       width: 1424, height: 940,
       mobile: { src: '/assets/projects/the-bv-brand/lead-mobile-374.webp', width: 374, height: 748 },
       alt: 'THE BV BRAND campaign homepage showing its gold monogram, editorial headline and red handbag photography.',
-    }], hackathon: null, outcomes: [],
+    }], award: null, outcomes: [],
   },
   {
     slug: 'stocksplit', title: 'StockSplit', category: ['web3'], featured: true, year: 2026,
@@ -62,7 +62,7 @@ export const projects = [
       width: 1440, height: 610,
       mobile: { src: '/assets/projects/stocksplit/lead-mobile-400.webp', width: 400, height: 725 },
       alt: 'StockSplit’s live introduction with its green branding, Devnet label and independent ownership message.',
-    }], hackathon: { label: 'Hackathon build' }, outcomes: [],
+    }], award: null, outcomes: [],
   },
   {
     slug: 'agenthub', title: 'AgentHub', category: ['web3'], featured: true, year: 2026,
@@ -78,13 +78,7 @@ export const projects = [
       mobile: { src: '/assets/projects/agenthub/lead-mobile-370.webp', width: 370, height: 702 },
       alt: 'AgentHub’s black and yellow marketplace introduction with its agent finder and BNB Smart Chain label.',
     }], outcomes: [],
-    hackathon: {
-      label: 'Hackathon build',
-      name: 'BNB Smart Money Era', year: null, date: null,
-      officialUrl: 'https://www.bnbchain.org/en/hackathons/smart-money-era',
-      participationContext: 'Built for the BNB Chain hackathon.',
-      result: null,
-    },
+    award: null,
   },
   {
     slug: 'portpay', title: 'PortPay', category: ['web3'], featured: true, year: 2026,
@@ -99,7 +93,7 @@ export const projects = [
       width: 1074, height: 614,
       mobile: { src: '/assets/projects/portpay/lead-mobile-360.webp', width: 360, height: 510 },
       alt: 'PortPay’s live merchant introduction, labelled X Layer Mainnet, with its Spend xStocks and Receive stablecoins headline.',
-    }], hackathon: { label: 'Hackathon build' }, outcomes: [],
+    }], award: null, outcomes: [],
   },
   {
     slug: 'rokai', title: 'Rokai', category: ['web3'], featured: false, year: null,
@@ -109,7 +103,7 @@ export const projects = [
     liveUrl: 'https://rokai-agent.vercel.app/',
     repositoryUrl: 'https://github.com/london160771/rokai',
     media: [], outcomes: [],
-    hackathon: { label: 'Hackathon build' },
+    award: null,
   },
   {
     slug: 'q2fa', title: 'Q2FA', category: ['web3'], featured: false, year: null,
@@ -119,7 +113,7 @@ export const projects = [
     liveUrl: 'https://q2fa.vercel.app',
     repositoryUrl: 'https://github.com/london160771/Q2FA',
     media: [], outcomes: [],
-    hackathon: { label: 'Hackathon build' },
+    award: 'Hackathon winner · Arc Microgrant',
   },
   {
     slug: 'nwc-limitprobe', title: 'NWC LimitProbe', category: ['web3'], featured: false, year: null,
@@ -129,7 +123,7 @@ export const projects = [
     liveUrl: 'https://nwc-limitprobe.vercel.app/',
     repositoryUrl: 'https://github.com/london160771/NWC-LimitProbe',
     media: [], outcomes: [],
-    hackathon: { label: 'Hackathon build' },
+    award: null,
   },
   {
     slug: 'alphawatch', title: 'AlphaWatch', category: ['web3'], featured: false, year: null,
@@ -138,7 +132,7 @@ export const projects = [
     stack: ['React', 'Chart.js', 'Axios'],
     liveUrl: 'https://alpha-watch.vercel.app/',
     repositoryUrl: 'https://github.com/london160771/AlphaWatch',
-    media: [], outcomes: [], hackathon: null,
+    media: [], outcomes: [], award: null,
   },
 ];
 
@@ -146,9 +140,10 @@ export function getProject(slug) {
   return projects.find((project) => project.slug === slug);
 }
 
-export const selectedWork = selectedWorkSlugs.map(getProject);
+// Builds order: the six featured projects first, then Q2FA, Rokai, NWC LimitProbe, AlphaWatch.
+const buildsOrder = [...selectedWorkSlugs, 'q2fa', 'rokai', 'nwc-limitprobe', 'alphawatch'];
+export const builds = buildsOrder.map(getProject);
 
-export function getProjectsByCategory(category) {
-  // Hackathon participation is metadata within Web3, never a category.
-  return projects.filter((project) => project.category.includes(category));
+export function getBuilds(category) {
+  return category ? builds.filter((project) => project.category.includes(category)) : builds;
 }
