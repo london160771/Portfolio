@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import Collage from '../components/Collage';
 import Dial from '../components/Dial';
 import About from '../components/About';
 import { profile } from '../data/profile';
@@ -19,7 +18,11 @@ export default function LandingPage() {
     <>
     <section className="landing container" aria-labelledby="landing-title">
       <motion.div className="landing-copy" variants={intro} initial="initial" animate="animate">
-        <motion.p className="eyebrow" variants={rise}>{profile.brand} — {profile.location}</motion.p>
+        <motion.div className="landing-id" variants={rise}>
+          <img className="landing-avatar" src="/assets/profile/pfp-400.webp" width="400" height="400"
+            alt="ayyoweb3's X avatar: an illustrated grey wolf in a maroon suit." fetchPriority="high" />
+          <p className="eyebrow">{profile.brand} — {profile.location}</p>
+        </motion.div>
         <motion.h1 id="landing-title" className="landing-title" variants={rise}>
           <span className="landing-line">Full stack web developer.</span>{' '}
           <em className="landing-line">AI motion designer.</em>
@@ -37,7 +40,6 @@ export default function LandingPage() {
           <Dial />
         </motion.div>
       </motion.div>
-      <Collage />
     </section>
     <About />
     </>
