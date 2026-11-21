@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import SiteLayout from '../components/SiteLayout';
 import LandingPage from '../pages/LandingPage';
 import MotionPage from '../pages/MotionPage';
+import VideoOverlay from '../components/VideoOverlay';
 import BuildsPage from '../pages/BuildsPage';
 import BuildsList from '../pages/builds/BuildsList';
 import ContactPage from '../pages/ContactPage';
@@ -12,7 +13,9 @@ export default function AppRoutes() {
     <Routes>
       <Route element={<SiteLayout />}>
         <Route index element={<LandingPage />} />
-        <Route path="motion" element={<MotionPage />} />
+        <Route path="motion" element={<MotionPage />}>
+          <Route path=":slug" element={<VideoOverlay />} />
+        </Route>
         <Route path="builds" element={<BuildsPage />}>
           <Route index element={<BuildsList />} />
           <Route path="web2" element={<BuildsList category="web2" />} />
