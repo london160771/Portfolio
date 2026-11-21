@@ -1,6 +1,6 @@
 # Portfolio specification
 
-Status: Phases 1–3 built (docs, foundation + landing, Builds cards). Motion page awaits videos (Phase 4). Supersedes the earlier dev-only spec; history lives in docs/.
+Status: Phases 1–4 built (docs, foundation + landing, Builds cards, Motion grid + overlay). Supersedes the earlier dev-only spec; history lives in docs/.
 
 ## Positioning
 ayyoweb3 (Sauban Adesope, Lagos) is a **Full Stack Web Developer & AI Motion Designer**: two independent skills: building web products end to end, and creating AI-driven motion graphics and video.
@@ -42,7 +42,7 @@ Navigation: Motion, Builds, Contact, with the wordmark linking home.
 - New dataset `src/data/motion.js`: slug, title, oneLiner, type (`client` | `personal` | `concept`), year, tools[], aspect (`16:9` | `9:16` | `1:1`), poster, previewSrc (short muted loop), fullSrc or embedUrl, duration.
 - Grid card: poster first, muted preview plays on hover (desktop) or when in view (mobile), title + one line + type below.
 - Overlay: full video with sound and controls, title, tools, year.
-- Source files come from the user's laptop folder in Phase 4. Short clips are compressed into the repo (`public/assets/motion/<slug>/`); long pieces go to unlisted YouTube/Vimeo or Vercel Blob.
+- Web copies (720p30 H.264 CRF 26, faststart, ~1–7 MB each) and posters live in `public/assets/motion/<slug>/`; originals stay on the user's laptop. If the set grows past ~100 MB, move videos to Vercel Blob.
 - Label client vs personal/concept honestly; never imply a client or result that isn't confirmed.
 
 ## Content rules
