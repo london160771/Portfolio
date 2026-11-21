@@ -1,19 +1,17 @@
 import ProjectActions from './ProjectActions';
 
-export default function ProjectList({ projects, headingLevel = 3, showCategory = true }) {
-  const Heading = headingLevel === 2 ? 'h2' : 'h3';
-  if (!projects.length) return <p>No projects to show in this collection yet.</p>;
+// Interim list for the Builds page; Phase 3 replaces it with animated cards.
+export default function ProjectList({ projects }) {
+  if (!projects.length) return <p>No builds to show here yet.</p>;
   return (
     <ul className="project-list">
       {projects.map((project) => (
-        <li key={project.slug}>
+        <li key={project.slug} id={project.slug}>
           <article className="project-summary">
             <div className="project-summary-heading">
-              <Heading className="project-title">{project.title}</Heading>
-              {(showCategory || project.hackathon?.label) && <p className="metadata">
-                {showCategory && <>{project.category.map((category) => category === 'web2' ? 'Web2' : 'Web3').join(' / ')}{project.year && ` · ${project.year}`}</>}
-                {project.hackathon?.label && <span className="hackathon-label">{showCategory && ' · '}{project.hackathon.label}</span>}
-              </p>}
+              <h2 className="project-title">{project.title}</h2>
+              <p className="metadata">{project.category.map((c) => (c === 'web2' ? 'Web2' : 'Web3')).join(' / ')}{project.year && ` · ${project.year}`}</p>
+              {project.award && <p className="award-badge">★ {project.award}</p>}
             </div>
             <div className="project-summary-body">
               {project.shortDescription && <p>{project.shortDescription}</p>}
