@@ -1,6 +1,8 @@
-.landing { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 32px clamp(24px, 4vw, 64px); min-height: calc(100svh - var(--header-height)); padding-block: clamp(32px, 6vh, 72px); }
+.landing { display: flex; align-items: center; min-height: calc(100svh - var(--header-height)); padding-block: clamp(40px, 8vh, 96px); }
+.landing-id { display: flex; align-items: center; gap: 16px; }
+.landing-avatar { width: clamp(72px, 8vw, 104px); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; background: var(--color-surface); box-shadow: 0 0 0 1px var(--color-rule); }
 .landing-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; min-width: 0; }
-.landing-title { font-family: var(--font-serif); font-size: var(--type-landing); line-height: .95; letter-spacing: -.02em; }
+.landing-title { font-family: var(--font-serif); font-size: clamp(2.5rem, 6.6vw, 6.75rem); line-height: .95; letter-spacing: -.02em; }
 .landing-line { display: block; }
 .landing-title em { font-style: italic; }
 .landing-intro { max-width: 34ch; font-size: var(--type-lede); line-height: 1.5; }
@@ -20,21 +22,10 @@
 }
 @keyframes dial-spin { to { transform: rotate(360deg); } }
 
-/* Collage */
-.collage { position: relative; width: 100%; aspect-ratio: 1 / 1.02; max-height: 78svh; }
-.collage-card { position: absolute; }
-.collage-card-inner { overflow: hidden; border-radius: var(--radius-media); background: var(--color-surface); box-shadow: 0 1px 2px rgb(0 0 0 / .06), 0 18px 40px -18px rgb(0 0 0 / .35); }
-.collage-card-inner img { width: 100%; }
-
-.collage-card--pfp img { aspect-ratio: 1; }
-
 @media (max-width: 64rem) {
-  .landing { grid-template-columns: 1fr; min-height: 0; }
-  .collage { max-width: 640px; aspect-ratio: 1 / .9; max-height: none; justify-self: center; }
+  .landing { min-height: 0; }
 }
 @media (max-width: 40rem) {
-  .collage-card--desktop { display: none; }
-  .collage { aspect-ratio: 1 / 1.05; }
   .dial { display: none; }
   .landing-actions { width: 100%; }
   .landing-actions .button { flex: 1 1 100%; }

@@ -17,7 +17,7 @@ Take ideas, not assets: no copied fonts, imagery, text or exact layouts.
 - Buttons: square corners, 1px ink border, uppercase 13px, 48px tall. Primary filled ink/canvas, secondary outline. Arrow nudges on hover.
 
 ## Signature moments
-1. **Landing collage:** 8–12 cards (motion stills, muted loops, build screenshots, pfp) scattered around the headline at slight rotations. On load they rise and settle in a stagger; on pointer move/scroll they drift with light parallax. Hover lifts a card. Mobile: smaller, fewer cards in a loose stack below the intro.
+1. **Landing avatar:** the X pfp sits as a round avatar beside the eyebrow, directly above the headline, in a single-column intro. (The earlier media collage was removed: it read as cluttered on mobile.)
 2. **Dial:** dashed circle (SVG) that rotates with scroll progress and carries a small label; sits beside the two buttons on desktop, hidden on small screens.
 3. **Huge type headers:** each of /motion and /builds opens with a giant serif word that slides up letter by letter, over or under full-bleed featured media (Atelier-style).
 4. **Page transitions:** shared layout route; outgoing page fades/lifts, incoming slides up 24px and fades in (~450ms, ease-out).
@@ -26,11 +26,11 @@ Take ideas, not assets: no copied fonts, imagery, text or exact layouts.
 ## Motion rules
 - Library: `motion` (Motion for React). One library only.
 - Animate transform and opacity only. Durations 200–700ms; ease `[0.22, 1, 0.36, 1]`.
-- Reduced motion: disable collage drift, parallax, dial rotation, letter animation and hover autoplay; keep instant or 150ms fades.
+- Reduced motion: disable parallax, dial rotation, letter animation and hover autoplay; keep instant or 150ms fades.
 - Never block reading or clicking while something animates.
 
 ## Components (minimal set)
-SiteLayout (header, footer, transitions), Wordmark, PathButton, Dial, Collage/CollageCard, BigTitle, BuildCard, AwardBadge, FilterTabs, MotionCard, VideoOverlay, ContactBlock.
+SiteLayout (header, footer, transitions), Wordmark, PathButton, Dial, BigTitle, BuildCard, AwardBadge, FilterTabs, MotionCard, VideoOverlay, ContactBlock.
 
 ## Review gate per phase
 Inspect 320/390/768/1440px, keyboard/focus, reduced motion, overflow, video loading. Run lint, build, git diff --check. Stop for review.

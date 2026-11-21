@@ -11,7 +11,7 @@ Visitors land, understand both roles in seconds, then pick a path: **Motion** (w
 ## Routes (nested, one shared layout)
 | Route | Content |
 | --- | --- |
-| `/` | Landing: intro, photo, proof, two path buttons, media collage |
+| `/` | Landing: intro, photo, X avatar, proof, two path buttons |
 | `/motion` | Motion header (featured reel or piece) + video grid |
 | `/motion/:slug` | Single piece as an overlay above the grid; shareable, Back/Escape closes |
 | `/builds` | Builds header + all projects |
@@ -52,6 +52,6 @@ Navigation: Motion, Builds, Contact, with the wordmark linking home.
 
 ## Accessibility and performance
 - One h1 per page, semantic landmarks, skip link, visible focus, 44px targets, keyboard access to every control including the video overlay (focus trap, Escape, focus restore).
-- `prefers-reduced-motion`: no parallax, collage drift or autoplay previews; page transitions become short fades.
+- `prefers-reduced-motion`: no parallax or autoplay previews; page transitions become short fades.
 - Animation never gates content. Videos lazy-load with posters; `preload="none"` for full videos. No layout shift from media.
 - Reflow at 320/390/768/1440px with no horizontal overflow.
