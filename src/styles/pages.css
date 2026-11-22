@@ -27,6 +27,15 @@
 .build-description { max-width: 52ch; }
 .build-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
 .build-tags li { padding: 4px 10px; border: 1px solid var(--color-rule); border-radius: var(--radius-pill); font-size: var(--type-label); }
+.case-notes { width: 100%; border-top: 1px solid var(--color-rule); }
+.case-notes summary { display: flex; align-items: center; justify-content: space-between; min-height: 44px; font-size: var(--type-label); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; list-style: none; }
+.case-notes summary::-webkit-details-marker { display: none; }
+.case-notes summary::after { content: '+'; font-size: 1.1rem; line-height: 1; transition: transform 200ms var(--ease-out); }
+.case-notes[open] summary::after { transform: rotate(45deg); }
+.case-notes dl { display: grid; gap: 12px; margin: 0 0 4px; }
+.case-notes dl > div { display: grid; grid-template-columns: 5.5rem 1fr; gap: 12px; }
+.case-notes dt { padding-top: .2em; color: var(--color-muted); font-size: var(--type-label); letter-spacing: .08em; text-transform: uppercase; }
+.case-notes dd { margin: 0; max-width: 52ch; }
 .award-badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: var(--radius-pill); background: var(--accent); color: #fff; font-size: var(--type-label); letter-spacing: .02em; }
 .project-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: var(--space-1); }
 .action-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid var(--color-ink); font-size: var(--type-label); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out); }
