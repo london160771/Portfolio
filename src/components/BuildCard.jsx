@@ -23,6 +23,25 @@ function BuildFrame({ project }) {
   );
 }
 
+function CaseNotes({ project }) {
+  const notes = [
+    ['Problem', project.caseNotes?.problem],
+    ['Role', project.role],
+    ['Result', project.caseNotes?.result],
+  ].filter(([, value]) => value);
+  if (!notes.length) return null;
+  return (
+    <details className="case-notes">
+      <summary>Case notes</summary>
+      <dl>
+        {notes.map(([term, value]) => (
+          <div key={term}><dt>{term}</dt><dd>{value}</dd></div>
+        ))}
+      </dl>
+    </details>
+  );
+}
+
 export default function BuildCard({ project, index }) {
   return (
     <motion.li
@@ -45,12 +64,12 @@ export default function BuildCard({ project, index }) {
           </div>
           {project.award && <p className="award-badge"><span aria-hidden="true">★</span> {project.award}</p>}
           <p className="build-description">{project.shortDescription}</p>
-          {project.role && <p className="metadata">{project.role}</p>}
           {!!project.stack.length && (
             <ul className="build-tags" aria-label="Stack">
               {project.stack.map((item) => <li key={item}>{item}</li>)}
             </ul>
           )}
+          <CaseNotes project={project} />
           <ProjectActions project={project} />
         </div>
       </article>
