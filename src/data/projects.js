@@ -6,7 +6,7 @@ export const selectedWorkSlugs = [
 export const projects = [
   {
     slug: 'opna', title: 'Opna', category: ['web2'], featured: true, year: 2026,
-    role: 'Full-stack developer',
+    role: 'Solo builder: design, frontend, backend, deploy',
     shortDescription: 'A booking MVP where business owners manage availability and customers book without an account.',
     caseNotes: {
       problem: "Small businesses need an easy way to take bookings without making every customer create an account.",
@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     slug: 'velora-cove', title: 'VELORA COVE', category: ['web2'], featured: true, year: 2026,
-    role: 'Design + frontend development',
+    role: 'Solo builder: design, frontend, deploy',
     shortDescription: 'A fictional coastal hospitality concept built around editorial layouts and film.',
     caseNotes: {
       problem: "Show how a hospitality brand could feel through film and editorial layout without a slow, heavy page.",
@@ -44,7 +44,7 @@ export const projects = [
   },
   {
     slug: 'the-bv-brand', title: 'THE BV BRAND', category: ['web2'], featured: true, year: 2026,
-    role: 'Design + frontend development',
+    role: 'Solo builder: design, frontend, deploy',
     shortDescription: 'A photography-led fashion campaign page linking visitors to the brand’s external store.',
     caseNotes: {
       problem: "Give a fashion brand a campaign page that leads with photography and sends shoppers to the store it already uses.",
@@ -63,7 +63,7 @@ export const projects = [
   },
   {
     slug: 'stocksplit', title: 'StockSplit', category: ['web3'], featured: true, year: 2026,
-    role: 'Full-stack / Web3 developer',
+    role: 'Solo builder: Solana program, frontend, deploy',
     shortDescription: 'A Solana Devnet demo of shared portfolios with independent proportional withdrawals.',
     caseNotes: {
       problem: "People who invest together usually depend on one account holder and manual records to share ownership.",
@@ -82,7 +82,7 @@ export const projects = [
   },
   {
     slug: 'agenthub', title: 'AgentHub', category: ['web3'], featured: true, year: 2026,
-    role: 'Product + full-stack development',
+    role: 'Solo builder: product, frontend, backend, deploy',
     shortDescription: 'A BNB Chain marketplace for discovering, comparing, and running supported AI agents with provenance.',
     caseNotes: {
       problem: "On-chain AI agents are hard to compare, trust and run in a consistent way.",
@@ -102,7 +102,7 @@ export const projects = [
   },
   {
     slug: 'portpay', title: 'PortPay', category: ['web3'], featured: true, year: 2026,
-    role: 'Full-stack / Web3 development',
+    role: 'Solo builder: contracts, frontend, backend, deploy',
     shortDescription: 'An X Layer checkout project connecting tokenized portfolio assets to stablecoin invoices.',
     caseNotes: {
       problem: "Tokenized stocks on X Layer are easy to hold but hard to spend with a merchant.",
@@ -121,7 +121,7 @@ export const projects = [
   },
   {
     slug: 'rokai', title: 'Rokai', category: ['web3'], featured: false, year: null,
-    role: 'Product + full-stack',
+    role: 'Solo builder: product, agent logic, frontend, deploy',
     shortDescription: 'A portfolio-policy skill for Binance Agent OS that checks user-defined rules and proposes trades for explicit approval.',
     caseNotes: {
       problem: "Trading agents chase signals. Users need one that sticks to their own portfolio rules and asks before acting.",
@@ -140,7 +140,7 @@ export const projects = [
   },
   {
     slug: 'q2fa', title: 'Q2FA', category: ['web3'], featured: false, year: null,
-    role: null,
+    role: 'Solo builder: contracts, frontend, backend, deploy',
     shortDescription: 'An Arc smart-account project combining an EVM owner wallet and a client-side post-quantum guardian for USDC authorization.',
     caseNotes: {
       problem: "If a wallet key is stolen, the attacker can usually move the funds with it alone.",
@@ -159,7 +159,7 @@ export const projects = [
   },
   {
     slug: 'nwc-limitprobe', title: 'NWC LimitProbe', category: ['web3'], featured: false, year: null,
-    role: null,
+    role: 'Solo builder: test harness, frontend, deploy',
     shortDescription: 'A Nostr Wallet Connect spending-limit stress tester with a browser sandbox and recorded Lightning regtest evidence.',
     caseNotes: {
       problem: "Can an AI agent overspend its Bitcoin wallet when two payments hit the spending limit at the same moment?",
@@ -178,7 +178,7 @@ export const projects = [
   },
   {
     slug: 'alphawatch', title: 'AlphaWatch', category: ['web3'], featured: false, year: null,
-    role: 'Full-stack developer',
+    role: 'Solo builder: design, frontend, deploy',
     shortDescription: 'A crypto-tracking app with watchlists, portfolio views, news and a trade simulator.',
     caseNotes: {
       problem: "Following prices, a watchlist and crypto news usually means jumping between apps.",
